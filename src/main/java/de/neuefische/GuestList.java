@@ -1,53 +1,28 @@
 package de.neuefische;
 
+import java.util.List;
 import java.util.Objects;
-
+// Aufgabe wiederholen
 public class GuestList {
+
     //Attribute
-    private String guest;
-
-    private String [] guestList;
-
+    private List<String> guests;
 
     //Methoden
-
-    public String [] setGuests (){
-       return null;
+    public void setGuests (List<String> guests) {
+        this.guests = guests;
     }
 
+public List<String> getGuests() {
+    return null;
+}
 
-    public String getGuest() {
-        return guest;
-    }
 
-    public void setGuest(String guest) {
-        this.guest = guest;
-    }
-//Constructor empty
-    public GuestList() {
-    }
-//Constructor
-    public GuestList(String guest) {
-        this.guest = guest;
-    }
-//ToString
-    @Override
-    public String toString() {
-        return "GuestList{" +
-                "guest='" + guest + '\'' +
-                '}';
-    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        GuestList guestList = (GuestList) o;
-        return Objects.equals(guest, guestList.guest);
-    }
+    //Constructor empty
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(guest);
-    }
+    //Constructor
+
+    //ToString
+
 }
